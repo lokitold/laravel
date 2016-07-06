@@ -24,11 +24,15 @@ class AreaController extends Controller
             'status' => $request['status'],
             'abbrev' => $request['abbrev']         
             ]);
+        
     }
 
     public function edit($id){
     	$area = Area::find($id);
+
     	return view('area.edit' , compact('area'));
+
+        
     }
 
     public function update(Request $request, $id){

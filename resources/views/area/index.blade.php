@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-
 	<div class="container">
 	<div class="page-header">
 		<h1>
@@ -12,11 +11,17 @@
 
 		<br>
 
-		{!!Html::script('js/buscador.js')!!}
+		{!!Html::script('js/ma.js')!!}
 		
 	</div>
 
-
+	<div class="col-sm-3 col-md-3 pull-right">
+		<div class="form-group has-feedback">
+	  
+	   
+	   
+	</div>
+	</div>
 	<br>
 	<br>
 	<br>
@@ -47,7 +52,12 @@
 			</tbody>
 		@endforeach
 	</table>
+
 	</div>
 
-
+	<script>
+		$(document).ready(function(){
+    $('#datos').DataTable();
+});
+	</script>
 @endsection
