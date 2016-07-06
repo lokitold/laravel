@@ -17,7 +17,7 @@ $(document).ready(function(){
             "$5,300"
         ]
     ]
-    $('#myTable').DataTable(
-        data: data;
-    );
+    $('#myTable').DataTable({
+        data: data
+    });
 });
