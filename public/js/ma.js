@@ -18,6 +18,6 @@ $(document).ready(function(){
         ]
     ]
     $('#myTable').DataTable(
-        data: data
+        data: data;
     );
 });
