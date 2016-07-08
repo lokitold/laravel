@@ -60,6 +60,7 @@
                             <ul class="dropdown-menu" role="menu">
                                 <li><a href="{{ url('/albums') }}">Albumes</a></li>
                                 <li><a href="{{ url('/album2s') }}">Albume2s</a></li>
+                                <li><a href="{{ url('/album3s') }}">Albume3s</a></li>
                                 <li><a href="{{ url('/areas') }}">Areas</a></li>
                                 <li><a href="{{ url('/authors') }}">Autores</a></li>
                                 <li><a href="{{ url('/busquedas') }}">Busquedas</a></li>
