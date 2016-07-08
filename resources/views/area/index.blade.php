@@ -33,6 +33,7 @@
 			<th>Descripcion</th>
 			<th>Estado</th>
 			<th>Abreviacion</th>
+			<th>other</th>
 			<th>Accion</th>
 		</thead>
 		@foreach($area as $area)
