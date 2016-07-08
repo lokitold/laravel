@@ -42,6 +42,7 @@ Route::group(['middleware' => 'auth'], function () {
    Route::resource('uncataloged','UncatalogedController');
    Route::resource('albums' , 'AlbumController');
    Route::resource('album2s', 'Album2Controller');
+   Route::resource('album3s', 'Album3Controller');
 
 });
 
@@ -57,5 +58,7 @@ Route::group(['prefix' => 'api', 'namespace' => 'API'], function () {
         require config('infyom.laravel_generator.path.api_routes');
     });
 });
+
+
 
 

@@ -163,6 +163,7 @@ return [
         Prettus\Repository\Providers\RepositoryServiceProvider::class,
         \InfyOm\Generator\InfyOmGeneratorServiceProvider::class,
         \InfyOm\CoreTemplates\CoreTemplatesServiceProvider::class,
+        Yajra\Datatables\DatatablesServiceProvider::class
 
     ],
 
@@ -213,6 +214,8 @@ return [
         'Html' => Collective\Html\HtmlFacade::class,
         'Image' => Intervention\Image\Facades\Image::class,
         'Flash'     => Laracasts\Flash\Flash::class,
+        'Datatables'     => Yajra\Datatables\Facades\Datatable::class
+
         
     ],
 
