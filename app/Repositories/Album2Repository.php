@@ -11,7 +11,9 @@ class Album2Repository extends BaseRepository
      * @var array
      */
     protected $fieldSearchable = [
-        
+        'name',
+        'route',
+        'status'
     ];
 
     /**

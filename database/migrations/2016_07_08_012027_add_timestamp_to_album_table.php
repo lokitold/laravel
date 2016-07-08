@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateAlbumsTable extends Migration
+class AddTimestampToAlbumTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,11 +12,9 @@ class CreateAlbumsTable extends Migration
      */
     public function up()
     {
-        Schema::create('albums', function(Blueprint $table){
-            $table->increments('id');
-            $table->string('name')->unique();
-            $table->string('route');
-            $table->string('status');
+        Schema::table('albums', function (Blueprint $table) {
+            //
+            $table->timestamps();
         });
     }
 
@@ -27,6 +25,9 @@ class CreateAlbumsTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::table('albums', function (Blueprint $table) {
+            //
+            $table->dropColumn('created_at', 'updated_at ');
+        });
     }
 }
