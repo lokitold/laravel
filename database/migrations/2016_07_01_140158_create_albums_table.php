@@ -17,6 +17,7 @@ class CreateAlbumsTable extends Migration
             $table->string('name')->unique();
             $table->string('route');
             $table->string('status');
+            $table->timestamps();
         });
     }
 

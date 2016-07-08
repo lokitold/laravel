@@ -106,9 +106,9 @@ return [
 
     'options' => [
 
-        'softDelete' => true,
+        'softDelete' => false,
 
-        'tables_searchable_default' => false,
+        'tables_searchable_default' => true,
     ],
 
     /*
@@ -146,7 +146,7 @@ return [
 
         'menu'          => [
 
-            'enabled'       => false,
+            'enabled'       => true,
 
             'menu_file'     => 'layouts/menu.blade.php',
         ],

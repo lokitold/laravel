@@ -33,7 +33,7 @@ Route::group(['middleware' => 'auth'], function () {
 
     $format = Format::where('type_id','=',$type_id)->get();
     return Response::json($format);
-  });
+   });
 
    Route::resource('authors' , 'AuthorController');
    Route::resource('areas' , 'AreaController');
@@ -41,8 +41,9 @@ Route::group(['middleware' => 'auth'], function () {
    Route::resource('cataloged', 'CatalogedController');
    Route::resource('uncataloged','UncatalogedController');
    Route::resource('albums' , 'AlbumController');
+   Route::resource('album2s', 'Album2Controller');
 
-    });
+});
 
 
 /*
@@ -56,3 +57,5 @@ Route::group(['prefix' => 'api', 'namespace' => 'API'], function () {
         require config('infyom.laravel_generator.path.api_routes');
     });
 });
+
+
